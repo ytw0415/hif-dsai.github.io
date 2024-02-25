@@ -711,12 +711,12 @@ a:hover {
   margin-bottom: 3rem;
 }
 
-.service-box:hover .ico-circle {
+/* .service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
   background-color: #0078ff;
   box-shadow: 0 0 0 10px #cde1f8;
-}
+} */
 
 .service-box .service-ico {
   margin-bottom: 1rem;
@@ -724,9 +724,18 @@ a:hover {
 }
 
 .service-box .ico-circle {
+  display: flex;
   transition: all 500ms ease;
   font-size: 4rem;
+  align-items: center; /* 이미지를 수직 가운데로 정렬 */
+  justify-content: center; /* 이미지를 수평 가운데로 정렬 */
 }
+
+.service-ico .ico-circle img {
+  max-width: 60%; /* 이미지를 원의 크기에 맞게 조정 */
+  max-height: 60%; /* 이미지를 원의 크기에 맞게 조정 */
+}
+
 
 .service-box .s-title {
   font-size: 1.4rem;
@@ -738,6 +747,71 @@ a:hover {
 .service-box .s-description {
   color: #4e4e4e;
 }
+
+.highlight-service-box {
+  background-color: #0078ff; /* 박스 배경색 설정 */
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* 마우스 호버시 그림자 크기 변경 */
+  transition: box-shadow 0.3s ease; /* 그림자 변화에 대한 애니메이션 효과 설정 */
+}
+
+.highlight-service-box:hover {
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* 마우스 호버시 그림자 크기 변경 */
+}
+
+.highlight-service-box .service-ico {
+  margin-bottom: 1rem;
+  color: #1B1B1B;
+}
+
+.highlight-service-box .s-description {
+  color: #fff;
+}
+
+.highlight-service-box .s-title {
+  font-size: 1.4rem;
+  text-transform: uppercase;
+  text-align: center;
+  padding: .4rem 0;
+  color:#fff;
+}
+
+.highlight-service-box .ico-circle {
+  transition: all 500ms ease;
+  font-size: 4rem;
+  color: #0078ff; /* 아이콘 색상 */
+  background-color: #fff; /* 내부 원의 배경색 */
+  position: relative; /* 위치 설정을 위해 추가 */
+}
+
+/* 외부 원을 생성하기 위한 가상 요소 */
+.highlight-service-box .ico-circle::after {
+  content: ''; /* 가상 요소의 내용 없음 */
+  display: block; /* 블록 요소로 표시 */
+  position: absolute; /* 절대 위치 설정 */
+  top: -6px; /* 외부 원의 위치 조정 */
+  left: -6px; /* 외부 원의 위치 조정 */
+  width: calc(100% + 12px); /* 외부 원의 너비 설정 */
+  height: calc(100% + 12px); /* 외부 원의 높이 설정 */
+  border-radius: 50%; /* 외부 원을 위한 경계 반지름 설정 */
+  border: 2px solid #cde1f8; /* 외부 원의 외곽선 스타일 및 투명도 설정 */
+}
+
+.service-box .highlight-service-box .service-ico .ico-circle {
+  color: #fff; /* 하이라이트 박스 안에 있는 아이콘 색상을 하얀색으로 설정 */
+}
+
+.gradient-bg {
+  height: 90px; /* 그라데이션의 높이, 필요에 따라 조정 */
+  background: linear-gradient(to bottom,
+  rgba(166, 197, 234, 1) 0%,
+  rgba(166, 197, 234, 0.5) 40%, 
+  rgba(166, 197, 234, 0.25) 75%, 
+  rgba(199, 216, 225, 0) 100%);
+  margin-bottom: -10px; /* 나머지 상자들과의 간격 조정 */
+  clip-path: polygon(35% 0, 65% 0, 100% 100%, 0% 100%); /* 상단이 좁고 하단이 넓은 사다리꼴 모양 클리핑 */
+  margin-top: -50px;
+}
+
 
 /*======================================
 //--//-->   COUNTER
@@ -765,59 +839,136 @@ a:hover {
 }
 
 /*======================================
-//--//-->   PORTFOLIO
+//--//-->   AWARD
 ======================================*/
-
-.work-box {
-  margin-bottom: 3rem;
-  -webkit-backface-visibility: hidden;
-  backface-visibility: hidden;
-  background-color: #fff;
+.resume-item {
+  display: flex;
+  flex-direction: column; /* 아이템을 세로로 배열 */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #eaeaea;
+  font-family: 'Noto Sans KR', sans-serif;
 }
 
-.work-box:hover img {
-  -webkit-transform: scale(1.3);
-  transform: scale(1.3);
+.resume-item header h3 {
+  font-family: 'Noto Sans KR', sans-serif;/* h3 요소에도 한글 폰트 적용 */
+  font-weight: 700; /* 얇은 노토산스의 글꼴 두께 */
 }
 
-.work-img {
-  display: block;
-  overflow: hidden;
+.resume-item header {
+  margin-bottom: 5px; /* header와 p 사이에 간격 추가 */
 }
 
-.work-img img {
-  transition: all 1s;
+.resume-item p {
+  margin-top: 0px; /* p 요소 위에 간격 추가 */
+}
+.resume-item .award-info p {
+  margin-bottom: 0.5px; /* 원하는 간격으로 조정 */
 }
 
-.work-content {
-  padding: 2rem 3% 1rem 4%;
+.award-icon-and-level {
+  display: flex;
+  align-items: center; /* 아이콘과 상 등급을 중앙 정렬 */
+  margin-bottom: 10px; /* 상세 설명과의 간격 */
 }
 
-.work-content .w-more {
-  color: #4e4e4e;
-  font-size: .8rem;
+.icon-left {
+  display: flex; /* flexbox 레이아웃을 사용하되, 인라인 요소처럼 동작하게 합니다. */
+  align-items: center; /* 세로 방향에서 가운데 정렬 */
+  justify-content: left; /* 가로 방향에서 가운데 정렬 */
+  color: #d4af37; /* 금색, 변경 가능 */
+  font-size: 15px; /* 아이콘 크기 */
 }
 
-.work-content .w-more .w-ctegory {
-  color: #0078ff;
+.award-level {
+  margin-left: 2px; /* 아이콘과 텍스트 사이의 간격 */
+  font-size: 15px; /* 아이콘 크기 */
+  font-weight: bold; /* 상 등급의 글씨를 두껍게 */
+  color: #0062d3; /* 텍스트 색상, 변경 가능 */
+  display: inline-block; /* 텍스트를 인라인 블록으로 설정, 필요시 조정 */
+  vertical-align: middle; /* 세로 방향 중앙 정렬 */
 }
 
-.work-content .w-like {
-  font-size: 2.5rem;
-  color: #0078ff;
-  float: right;
+.award-media {
+  display: flex;
+  align-items: flex-start; /* 이미지와 정보를 상단에서 정렬 */
+  margin-bottom: 20px;
 }
 
-.work-content .w-like a {
-  color: #0078ff;
+.award-screenshot {
+  width: 400px; /* 이미지 크기, 필요에 따라 조정 */
+  height: auto;
+  margin-right: 20px; /* 이미지와 텍스트 사이 간격 */
+  border-radius: 8px; /* 이미지 모서리 둥글게 */
 }
 
-.work-content .w-like .num-like {
-  font-size: .7rem;
+.award-info {
+  flex: 1;
+  display: flex;
+  flex-direction: column; /* 텍스트 정보를 세로로 배열 */
 }
 
-.w-title {
-  font-size: 1.2rem;
+.icon-left {
+  margin-right: 10px;
+  color: #d4af37;
+  font-size: 24px;
+}
+
+.award-level {
+  font-weight: bold;
+  color: #555;
+}
+
+.tags {
+  margin-top: 0px;
+  display: flex;
+}
+
+.badge {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: bold;
+  color: #fff;
+  padding: 4px 8px;
+  border-radius: 12px;
+  margin-right: 6px;
+}
+
+.nlp {
+  background-color: #0074d9; /* NLP 배지 배경색 */
+}
+
+.finance {
+  background-color: #2ecc40; /* Finance 배지 배경색 */
+}
+
+.business-analytics {
+  background-color: #ff851b; /* Business Analytics 배지 배경색 */
+}
+
+.cv {
+  background-color: #ff4136; /* CV 배지 배경색 */
+}
+
+.recsys {
+  background-color: #7fdbff; /* RecSys 배지 배경색 */
+}
+
+.graph-mining {
+  background-color: #b10dc9; /* Graph Mining 배지 배경색 */
+}
+
+#subject,
+#overview {
+  font-family: 'Noto Sans KR', sans-serif; /* 얇은 노토산스 */
+  font-weight: bold;
+  color: black; /* 검은색 */
+}
+
+.resume-item .award-info p:not(#subject):not(#overview) {
+  color: #666; /* 얕은 회색 */
+  font-family: 'Noto Sans KR', sans-serif; /* 얇은 노토산스 */
+  font-weight: 300; /* 얇은 노토산스의 글꼴 두께 */
 }
 
 /*======================================
