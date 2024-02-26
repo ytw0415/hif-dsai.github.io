@@ -45,7 +45,10 @@
   <!--/ Nav Star /-->
   <nav class="navbar navbar-b navbar-trans navbar-expand-md fixed-top" id="mainNav">
     <div class="container">
-      <a class="navbar-brand js-scroll" href="#page-top"><img src="img/favicon.png" style="vertical-align: middle; margin-right: 10px;"><span style="vertical-align: middle;">HIF DSAI</span></a>
+      <a class="navbar-brand js-scroll" href="#page-top">
+        <img src="img/logo.png" style="vertical-align: middle; margin-right: 5px;">
+        <span style="vertical-align: middle;">HIF DSAI</span>
+      </a>
       <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarDefault"
         aria-controls="navbarDefault" aria-expanded="false" aria-label="Toggle navigation">
         <span></span>
@@ -152,7 +155,9 @@
         <div class="col-md-4">
           <div class="service-box highlight-service-box">
             <div class="service-ico">
-              <span class="ico-circle"><i class="ion-ios-cog"></i></span>
+              <span class="ico-circle">
+                <i class="ion-ios-cog"></i>
+              </span>
             </div>
             <div class="service-content">
               <h2 class="s-title">Data Science & AI</h2>
@@ -251,9 +256,10 @@
               AWARD
             </h3>
             <p class="subtitle-a">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+              금융연구회 DSAI의 최근 실적입니다.
             </p>
             <div class="line-mf"></div>
+            <p class="pt-3"><a class="btn btn-primary btn js-scroll px-4" href="#about" role="button">Learn More</a></p>
           </div>
         </div>
       </div>
@@ -261,7 +267,7 @@
       <section class="work-experience">
         <article class="resume-item">
           <div class="award-media">
-            <img src="img/NH.png" alt="Award Screenshot" class="award-screenshot"> <!-- 스크린샷 이미지 -->
+            <img src="img/hana.png" alt="Award Screenshot" class="award-screenshot"> <!-- 스크린샷 이미지 -->
             <div class="award-info">
               <span class="award-level">최우수상</span></i> <!-- 상 아이콘 -->
                <!-- 상 등급 -->
@@ -269,11 +275,7 @@
                 <h3>하나 디지털 파워온</h3>
                 <div class="tags">
                   <span class="badge nlp">NLP</span>
-                  <span class="badge finance">Finance</span>
-                  <span class="badge business-analytics">Business Analytics</span>
                   <span class="badge cv">CV</span>
-                  <span class="badge recsys">RecSys</span>
-                  <span class="badge graph-mining">Graph Mining</span>
                   <!-- 다른 태그들 추가 -->
                 </div>
               </header>
@@ -288,15 +290,24 @@
 
         <article class="resume-item">
           <div class="award-media">
-            <img src="img/hana.png" alt="Award Screenshot" class="award-screenshot"> <!-- 스크린샷 이미지 -->
+            <img src="img/NH.png" alt="Award Screenshot" class="award-screenshot"> <!-- 스크린샷 이미지 -->
             <div class="award-info">
-              <i class="fa fa-trophy icon-left"></i> <!-- 상 아이콘 -->
-              <span class="award-level">Gold Award</span> <!-- 상 등급 -->
+              <span class="award-level">우수상(2위)</span></i> <!-- 상 아이콘 -->
+               <!-- 상 등급 -->
               <header>
-                <h3>Best Developer of the Year</h3>
-                <time>2021</time>
+                <h3>NH투자증권 빅데이터 경진대회</h3>
+                <div class="tags">
+                  <span class="badge business-analytics">Business Analytics</span>
+                  <span class="badge recsys">RecSys</span>
+                  <span class="badge graph-mining">Graph Mining</span>
+                  <!-- 다른 태그들 추가 -->
+                </div>
               </header>
-              <p>Description of the award...</p>
+              <p id="subject">주제</p>
+              <p>Stock clustering 및 Customer trading pattren 기반 추천 시스템</p>
+              <p id="overview">개요</p>
+              <p>주식 군집 및 고객의 손바뀜 패턴 기반 종목 추천 시스템 제안</p>
+             
             </div>
           </div>
         </article>
@@ -305,13 +316,21 @@
           <div class="award-media">
             <img src="img/kb.png" alt="Award Screenshot" class="award-screenshot"> <!-- 스크린샷 이미지 -->
             <div class="award-info">
-              <i class="fa fa-trophy icon-left"></i> <!-- 상 아이콘 -->
-              <span class="award-level">Gold Award</span> <!-- 상 등급 -->
+              <span class="award-level">장려상</span></i> <!-- 상 아이콘 -->
+               <!-- 상 등급 -->
               <header>
-                <h3>Best Developer of the Year</h3>
-                <time>2021</time>
+                <h3>KB증권 디저털 Idea Market 공모전</h3>
+                <div class="tags">
+                  <span class="badge nlp">NLP</span>
+                  <span class="badge finance">Finance</span>
+                  <!-- 다른 태그들 추가 -->
+                </div>
               </header>
-              <p>Description of the award...</p>
+              <p id="subject">주제</p>
+              <p>Topic modeling을 통한  뉴스 데이터 제공 서비스 “Social-Trend”</p>
+              <p id="overview">개요</p>
+              <p>Topic modeling을 통해 기업의 ESG 등급을 예측한 후 고객에게 유용한 정보를 제공함.</p>
+             
             </div>
           </div>
         </article>
@@ -355,7 +374,7 @@
         <div class="col-sm-12">
           <div class="title-box text-center">
             <h3 class="title-a">
-              Blog
+              PROJECTS
             </h3>
             <p class="subtitle-a">
               Lorem ipsum, dolor sit amet consectetur adipisicing elit.
@@ -378,9 +397,7 @@
               </div>
               <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
               <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
+                Proin eget tortor risus.
               </p>
             </div>
             <div class="card-footer">
@@ -409,9 +426,7 @@
               </div>
               <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
               <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
+                Proin eget tortor risus.
               </p>
             </div>
             <div class="card-footer">
@@ -440,9 +455,7 @@
               </div>
               <h3 class="card-title"><a href="blog-single.html">See more ideas about Travel</a></h3>
               <p class="card-description">
-                Proin eget tortor risus. Pellentesque in ipsum id orci porta dapibus. Praesent sapien massa, convallis
-                a pellentesque nec,
-                egestas non nisi.
+                Proin eget tortor risus.
               </p>
             </div>
             <div class="card-footer">

@@ -78,9 +78,15 @@
 		if ($(window).scrollTop() > pixels) {
 			$('.navbar-expand-md').addClass('navbar-reduce');
 			$('.navbar-expand-md').removeClass('navbar-trans');
+			$('.navbar-brand img').css('filter', '');
+			// // Change the navbar brand image for the reduced navbar
+			// $('.navbar-brand img').attr('src', 'img/logo.png'); // Change to reduced image
 		} else {
 			$('.navbar-expand-md').addClass('navbar-trans');
 			$('.navbar-expand-md').removeClass('navbar-reduce');
+			$('.navbar-brand img').css('filter', 'brightness(0) invert(1)');
+			// // Revert to the original navbar brand image when not reduced
+			// $('.navbar-brand img').attr('src', 'img/favicon.png'); // Change back to original image
 		}
 		if ($(window).scrollTop() > top) {
 			$('.scrolltop-mf').fadeIn(1000, "easeInOutExpo");

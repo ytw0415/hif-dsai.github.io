@@ -29,7 +29,7 @@ a {
 }
 
 a:hover {
-  color: #0078ff;
+  color: #002D56;
   text-decoration: none;
   transition: all 0.5s ease-in-out;
 }
@@ -39,7 +39,7 @@ a:hover {
 }
 
 .color-a {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .color-d {
@@ -90,7 +90,7 @@ a:hover {
 }
 
 .overlay-mf {
-  background-color: #0078ff;
+  background-color: #002D56;
 }
 
 .overlay-mf {
@@ -160,7 +160,7 @@ a:hover {
 .line-mf {
   width: 40px;
   height: 5px;
-  background-color: #0078ff;
+  background-color: #002D56;
   margin: 0 auto;
 }
 
@@ -179,7 +179,7 @@ a:hover {
   content: '';
   position: absolute;
   height: 3px;
-  background-color: #0078ff;
+  background-color: #002D56;
   width: 100px;
   bottom: -12px;
 }
@@ -216,12 +216,12 @@ a:hover {
   border-radius: 50%;
   line-height: 1.4;
   margin: 0 15px 0 0;
-  box-shadow: 0 0 0 3px #0078ff;
+  box-shadow: 0 0 0 3px #002D56;
   transition: all 500ms ease;
 }
 
 .socials .ico-circle:hover {
-  background-color: #0078ff;
+  background-color: #002D56;
   color: #fff;
   box-shadow: 0 0 0 3px #cde1f8;
   transition: all 500ms ease;
@@ -246,7 +246,7 @@ a:hover {
 }
 
 .list-ico span {
-  color: #0078ff;
+  color: #002D56;
   margin-right: 10px;
 }
 
@@ -260,7 +260,7 @@ a:hover {
   line-height: 1.55;
   margin: 0 auto;
   text-align: center;
-  box-shadow: 0 0 0 10px #0078ff;
+  box-shadow: 0 0 0 10px #002D56;
   display: block;
 }
 
@@ -307,7 +307,7 @@ a:hover {
   position: fixed;
   width: 42px;
   height: 42px;
-  background-color: #0078ff;
+  background-color: #002D56;
   opacity: .7;
   font-size: 1.6rem;
   line-height: 1.5;
@@ -326,7 +326,7 @@ a:hover {
 .back-to-top {
   position: fixed;
   display: none;
-  background: #0078ff;
+  background: #002D56;
   color: #fff;
   width: 44px;
   height: 44px;
@@ -364,7 +364,7 @@ a:hover {
   top: calc(50% - 30px);
   left: calc(50% - 30px);
   border: 6px solid #f2f2f2;
-  border-top: 6px solid #0078ff;
+  border-top: 6px solid #002D56;
   border-radius: 50%;
   width: 60px;
   height: 60px;
@@ -481,36 +481,38 @@ a:hover {
 }
 
 .navbar-b.navbar-reduce .nav-link {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .navbar-b.navbar-reduce .nav-link:before {
-  background-color: #0078ff;
+  background-color: #002D56;
 }
 
 .navbar-b.navbar-reduce .nav-link:hover {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .navbar-b.navbar-reduce .show > .nav-link,
 .navbar-b.navbar-reduce .active > .nav-link,
 .navbar-b.navbar-reduce .nav-link.show,
 .navbar-b.navbar-reduce .nav-link.active {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .navbar-b.navbar-reduce .navbar-brand {
-  color: #0078ff;
-}
-
-.navbar-b.navbar-reduce .navbar-toggler span {
-  background-color: #1B1B1B;
+  color: #002D56;
 }
 
 .navbar-b .navbar-brand {
   color: #fff;
   font-size: 1.6rem;
   font-weight: 600;
+}
+
+.navbar-brand img {
+  max-height: 40px; /* Adjusts the maximum height */
+  width: auto; /* Ensures the width adjusts to maintain aspect ratio */
+  display: inline-block; /* Keeps the image inline with text */
 }
 
 .navbar-b .navbar-nav .dropdown-item.show .dropdown-menu,
@@ -532,13 +534,13 @@ a:hover {
 }
 
 .navbar-b .dropdown-menu .dropdown-item:hover {
-  background-color: #0078ff;
+  background-color: #002D56;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .navbar-b .dropdown-menu .dropdown-item.active {
-  background-color: #0078ff;
+  background-color: #002D56;
 }
 
 /*--/ Hamburger Navbar /--*/
@@ -652,7 +654,7 @@ a:hover {
 
 .intro-single .breadcrumb {
   background-color: transparent;
-  color: #0078ff;
+  color: #002D56;
 }
 
 .intro-single .breadcrumb .breadcrumb-item:before {
@@ -697,7 +699,7 @@ a:hover {
 
 .skill-mf .progress .progress-bar {
   height: .7rem;
-  background-color: #0078ff;
+  background-color: #002D56;
 }
 
 /*======================================
@@ -710,11 +712,11 @@ a:hover {
   border-radius: 1rem;
   margin-bottom: 3rem;
 }
-
-/* .service-box:hover .ico-circle {
+/* 
+.service-box:hover .ico-circle {
   transition: all 500ms ease;
   color: #fff;
-  background-color: #0078ff;
+  background-color: #002D56;
   box-shadow: 0 0 0 10px #cde1f8;
 } */
 
@@ -722,6 +724,7 @@ a:hover {
   margin-bottom: 1rem;
   color: #1e1e1e;
 }
+
 
 .service-box .ico-circle {
   display: flex;
@@ -749,7 +752,7 @@ a:hover {
 }
 
 .highlight-service-box {
-  background-color: #0078ff; /* 박스 배경색 설정 */
+  background-color: #002D56; /* 박스 배경색 설정 */
   box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.3); /* 마우스 호버시 그림자 크기 변경 */
   transition: box-shadow 0.3s ease; /* 그림자 변화에 대한 애니메이션 효과 설정 */
 }
@@ -760,7 +763,7 @@ a:hover {
 
 .highlight-service-box .service-ico {
   margin-bottom: 1rem;
-  color: #1B1B1B;
+  color: #002D56;
 }
 
 .highlight-service-box .s-description {
@@ -778,7 +781,7 @@ a:hover {
 .highlight-service-box .ico-circle {
   transition: all 500ms ease;
   font-size: 4rem;
-  color: #0078ff; /* 아이콘 색상 */
+  color: #002D56; /* 아이콘 색상 */
   background-color: #fff; /* 내부 원의 배경색 */
   position: relative; /* 위치 설정을 위해 추가 */
 }
@@ -866,12 +869,6 @@ a:hover {
   margin-bottom: 0.5px; /* 원하는 간격으로 조정 */
 }
 
-.award-icon-and-level {
-  display: flex;
-  align-items: center; /* 아이콘과 상 등급을 중앙 정렬 */
-  margin-bottom: 10px; /* 상세 설명과의 간격 */
-}
-
 .icon-left {
   display: flex; /* flexbox 레이아웃을 사용하되, 인라인 요소처럼 동작하게 합니다. */
   align-items: center; /* 세로 방향에서 가운데 정렬 */
@@ -884,7 +881,7 @@ a:hover {
   margin-left: 2px; /* 아이콘과 텍스트 사이의 간격 */
   font-size: 15px; /* 아이콘 크기 */
   font-weight: bold; /* 상 등급의 글씨를 두껍게 */
-  color: #0062d3; /* 텍스트 색상, 변경 가능 */
+  color: #002D56; /* 텍스트 색상, 변경 가능 */
   display: inline-block; /* 텍스트를 인라인 블록으로 설정, 필요시 조정 */
   vertical-align: middle; /* 세로 방향 중앙 정렬 */
 }
@@ -906,6 +903,7 @@ a:hover {
   flex: 1;
   display: flex;
   flex-direction: column; /* 텍스트 정보를 세로로 배열 */
+  color:#0062d3;
 }
 
 .icon-left {
@@ -914,10 +912,6 @@ a:hover {
   font-size: 24px;
 }
 
-.award-level {
-  font-weight: bold;
-  color: #555;
-}
 
 .tags {
   margin-top: 0px;
@@ -1003,7 +997,7 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #0078ff;
+  color: #002D56;
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -1036,7 +1030,7 @@ a:hover {
   color: #fff;
   padding: 0 15px 5px;
   overflow: hidden;
-  background-color: #0078ff;
+  background-color: #002D56;
   border-radius: 4px;
 }
 
@@ -1090,7 +1084,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid #002D56;
   margin-top: 1rem;
 }
 
@@ -1100,7 +1094,7 @@ a:hover {
 }
 
 .blog-wrapper .post-meta ul a {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .blog-wrapper .post-meta ul span {
@@ -1108,7 +1102,7 @@ a:hover {
 }
 
 .blog-wrapper .blockquote {
-  border-left: 4px solid #0078ff;
+  border-left: 4px solid #002D56;
   padding: 18px;
   font-style: italic;
 }
@@ -1140,7 +1134,7 @@ a:hover {
 }
 
 .box-comments .list-comments a {
-  color: #0078ff;
+  color: #002D56;
 }
 
 .box-comments .list-comments span {
@@ -1157,7 +1151,7 @@ a:hover {
 .widget-sidebar .sidebar-title {
   font-size: 1.6rem;
   font-weight: 600;
-  border-left: 5px solid #0078ff;
+  border-left: 5px solid #002D56;
   padding-left: 15px;
   text-transform: uppercase;
   margin-bottom: 1.5rem;
@@ -1174,7 +1168,7 @@ a:hover {
   width: 10px;
   height: 1px;
   left: 0;
-  background-color: #0078ff;
+  background-color: #002D56;
   top: 20px;
 }
 
@@ -1185,8 +1179,8 @@ a:hover {
 }
 
 .sidebar-search .btn-search {
-  background-color: #0078ff;
-  border-color: #0078ff;
+  background-color: #002D56;
+  border-color: #002D56;
   border-radius: 0;
   padding-left: 20px;
   padding-right: 20px;
@@ -1194,7 +1188,7 @@ a:hover {
 
 .widget-tags ul li {
   display: inline-block;
-  background-color: #0078ff;
+  background-color: #002D56;
   padding: .2rem .6rem;
   margin-bottom: .5rem;
   border-radius: 15px;
@@ -1243,8 +1237,8 @@ footer .credits a {
 ======================================*/
 
 #sendmessage {
-  color: #0078ff;
-  border: 1px solid #0078ff;
+  color: #002D56;
+  border: 1px solid #002D56;
   display: none;
   text-align: center;
   padding: 15px;
@@ -1301,13 +1295,13 @@ footer .credits a {
 }
 
 .button:hover {
-  background-color: #0062d3;
+  background-color: #002D56;
   color: #fff;
   transition: all 500ms ease;
 }
 
 .button-a {
-  background-color: #0078ff;
+  background-color: #002D56;
   color: #fff;
   border-color: #cde1f8;
 }
