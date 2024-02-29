@@ -1249,42 +1249,43 @@ footer .credits a {
 }
 
 /*======================================
-//--//-->   CONtaCT FORM
+//--//-->   Table FORM
 ======================================*/
 
-#sendmessage {
-  color: #002D56;
-  border: 1px solid #002D56;
-  display: none;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+}
+.badge {
+  padding: 5px 10px;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
 }
 
-#errormessage {
-  color: red;
-  display: none;
-  border: 1px solid red;
-  text-align: center;
-  padding: 15px;
-  font-weight: 600;
-  margin-bottom: 15px;
-}
-
-#sendmessage.show,
-#errormessage.show,
-.show {
-  display: block;
-}
-
-.validation {
-  color: red;
-  display: none;
-  margin: 0 0 20px;
-  font-weight: 400;
-  font-size: 13px;
-}
+.year1 { background-color: #7ec0ee; } /* Brighter blue */
+.year2 { background-color: #5a92d6; } /* Deeper blue */
+.field { background-color: #b3e5fc; } /* Light blue */
+.field1 { background-color: #ffaaa5; } /* Soft red */
+.field2 { background-color: #ffd3b6; } /* Peach */
+.field3 { background-color: #ff8b94; } /* Light coral */
+.field4 { background-color: #d7aefb; } /* Lavender */
+.field5 { background-color: #cda4de; } /* Soft purple */
+.field6 { background-color: #a3a8d8; } /* Soft blue */
+.field7 { background-color: #81deea; } /* Sky blue */
+.field8 { background-color: #89d8d3; } /* Aquamarine */
+.field9 { background-color: #a5d6a7; } /* Greenish */
+.field10 { background-color: #b9f8d3; } /* Mint */
+.field11 { background-color: #e4e978; } /* Light lime */
+.field12 { background-color: #fff59d; } /* Light yellow */
+.field13 { background-color: #ffe0ac; } /* Light orange */
+.field14 { background-color: #ffccaa; } /* Soft orange */
+.field15 { background-color: #ffab91; } /* Melon */
 
 /*======================================
 //--//-->   BUTTON
