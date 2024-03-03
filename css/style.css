@@ -171,7 +171,7 @@ a:hover {
 }
 
 .title-left {
-  font-size: 2rem;
+  font-size: 1.5rem;
   position: relative;
 }
 
@@ -686,22 +686,75 @@ a:hover {
   margin-left: 10px;
 }
 
-.skill-mf span {
-  color: #4e4e4e;
+/*======================================
+//--//-->   ABOUT
+======================================*/
+
+.about-img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 20px;
 }
 
-.skill-mf .progress {
-  background-color: #cde1f8;
-  margin: .5rem 0 1.2rem 0;
-  border-radius: 0;
-  height: .7rem;
+.title-left {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  transition: all 0.3s ease;
 }
 
-.skill-mf .progress .progress-bar {
-  height: .7rem;
-  background-color: #002D56;
+.lead {
+  font-size: 18px;
+  color: #555;
+  transition: all 0.3s ease;
 }
 
+.animated {
+  opacity: 0;
+  animation-fill-mode: forwards; /* 애니메이션이 끝난 상태를 유지 */
+}
+
+@keyframes fadeInUp {
+  0% {
+    transform: translate3d(0, 40px, 0);
+    opacity: 0;
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+    opacity: 1;
+  }
+}
+
+.inspirational-quote {
+  position: relative;
+  font-size: 28px; /* 글자 크기 설정 */
+  line-height: 1.4;
+  font-weight: bold; /* 글자 두껍게 */
+  color: #333; /* 글자 색상 */
+  padding: 20px 40px; /* 패딩 설정 */
+  margin: 30px 0; /* 마진 설정 */
+  font-style: italic; /* 이탤릭체 설정 */
+}
+
+.inspirational-quote:before,
+.inspirational-quote:after {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: 60px; /* 따옴표 크기 */
+  color: #78c7d2; /* 따옴표 색상 */
+  position: absolute;
+}
+
+.inspirational-quote:before {
+  content: "“"; /* 시작 따옴표 */
+  left: 10px; /* 왼쪽 정렬 */
+  top: -20px; /* 상단 위치 조정 */
+}
+
+.inspirational-quote:after {
+  content: "”"; /* 끝 따옴표 */
+  right: 60 px; /* 오른쪽 정렬 */
+  bottom: -20px; /* 하단 위치 조정 */
+}
 /*======================================
 //--//-->   SERVICES
 ======================================*/
@@ -1051,7 +1104,7 @@ a:hover {
 
 .testimonial-box .comit {
   font-size: 2rem;
-  color: #002D56;
+  color: #0078ff;
   background-color: #fff;
   width: 52px;
   height: 52px;
@@ -1272,13 +1325,108 @@ a:hover {
 //--//-->   CONTACT
 ======================================*/
 
-.footer-paralax {
-  padding: 4rem 0 0 0;
+
+.step-area {
+  text-align: center;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  box-sizing: border-box;
+  word-break: keep-all;
+  color: #0C0C0C;
+  font-size: 13px;
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  margin: 60px -10px 0 -10px;
 }
 
-.contact-mf {
-  margin-top: 4rem;
+.step-area .box {
+  flex: 0 0 25%; /* 네 개의 상자를 한 행에 배치하기 위한 너비 설정 */
+  padding: 0 10px; /* 각 상자 사이의 간격 조정 */
 }
+
+.step-area .box:nth-child(4) dt {
+  background-color: #0C0C0C; /* 변경할 색상 */
+}
+
+.step-area dl {
+  margin-bottom: 20px;
+}
+
+.step-area dt {
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.step-area dd {
+  margin-left: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.step-area dt {
+  margin: 0;
+  padding: 0;
+  font-family: 'Noto Sans KR', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  box-sizing: border-box;
+  word-break: keep-all;
+  position: relative;
+  width: 100%;
+  margin-bottom: 20px;
+  background: #0062d3;
+  text-align: center;
+  color: #ffffff;
+  font-weight: 700;
+  height: 46px;
+  line-height: 46px;
+  border-radius: 23px;
+  font-size: 18px;
+}
+
+.title-step {
+  text-align: center;
+  font-family: 'Noto Sans KR', sans-serif;
+  font-weight: 300;
+  font-size: 25px;
+  color:#0C0C0C;
+  line-height: 1.5;
+  word-break: keep-all;
+  box-sizing: border-box;
+}
+
+.title-step strong {
+  font-weight: 700;
+}
+
+.step-area dl dd {
+  position: relative;
+}
+
+.step-area dl dd::after {
+  content: '';
+  position: absolute;
+  bottom: -10px;
+  left: 50%; /* 점선의 시작 위치를 가운데 정렬 */
+  transform: translateX(-50%); /* 점선을 가운데 정렬 */
+  width: 50%;
+  height: 1px;
+  background-color: #4e4e4e; /* 점선 색상 */
+  background-image: linear-gradient(90deg, #000 50%, transparent 50%);
+  background-size: 5px 1px; /* 점선 크기 및 간격 */
+}
+
+.custom-content {
+  margin-top: 20px; /* 내용과의 간격 조절 */
+  font-size: 14px;
+  line-height: 1.5; /* 줄간격 조절 */
+}
+
+/* Add additional styling here */
+
 
 /*======================================
 //--//-->   FOOTER
