@@ -1436,6 +1436,34 @@ a:hover {
   }
 }
 
+.reference-area {
+  text-align: left; /* Text alignment */
+  padding: 20px;
+  margin: auto; /* Centers the block horizontally */
+  max-width: 80%; /* Limits the maximum width */
+  background-color: #ffffff; /* White background color */
+}
+
+.reference-title {
+  font-size: 20px; /* Title font size */
+  margin-bottom: 15px; /* Space below the title */
+  font-weight: 800; /* Bold font weight */
+  font-family: 'Noto Sans KR', sans-serif; /* Font family */
+}
+
+.reference-content {
+  list-style-type: disc; /* Default disc-style bullet points */
+  padding-left: 20px; /* Indentation for the bullet points */
+  text-align: left; /* Text alignment to the left */
+  font-family: 'Noto Sans KR', sans-serif; /* Font family */
+  font-size: 15px; /* Title font size */
+}
+
+.reference-content li {
+  text-align: left; /* Text alignment to the left */
+  padding-bottom: 5px; /* Bottom padding for spacing between list items */
+}
+
 /* Add additional styling here */
 
 /*======================================
@@ -1549,11 +1577,13 @@ a:hover {
   overflow: hidden;
   padding-block-start: 1.5rem;
   padding-block-end: 1rem;
-  font-weight: 500;
+  font-weight: 700;
+  font-size: 1.2rem;
 }
 
 .container_timeline ul li .descr {
   padding-block-end: 1.5rem;
+  font-size: 0.75rem;
   font-weight: 300;
 }
 
@@ -1623,7 +1653,6 @@ a:hover {
 .container_timeline .credits a {
   color: var(--color);
 }
-
 
 
 /*======================================
