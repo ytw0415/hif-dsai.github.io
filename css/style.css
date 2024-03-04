@@ -1425,6 +1425,17 @@ a:hover {
   line-height: 1.5; /* 줄간격 조절 */
 }
 
+@media (max-width: 768px) {
+  .step-area .box {
+    flex: 0 0 100%; /* 모바일에서는 각 박스가 전체 너비를 차지하도록 설정 */
+    margin: 10px 0; /* 상하 마진 추가로 각 박스 사이의 공간 확보 */
+  }
+
+  .step-area dl dd::after {
+    width: 80%; /* 모바일에서 점선의 길이 조정 */
+  }
+}
+
 /* Add additional styling here */
 
 /*======================================
